@@ -1,0 +1,60 @@
+body{
+    /* width: 100%; */
+    margin: 0 auto;
+}
+
+table {
+    border: 2px solid #eee;
+    border-collapse: collapse;  /* 境界線をなくしています */
+}
+
+thead,
+tfoot{
+    background-color: #eee;
+}
+
+td,
+th{
+    text-align: center;
+    padding: 8px;
+}
+
+tbody td:first-child{
+    color: red;
+}
+
+tbody td:last-child{
+    color: blue;
+}
+
+tfoot{
+    font-weight: bold;
+}
+
+td.disable{
+    opacity: 0.3;
+}
+
+td.today{
+    font-weight: bold;
+}
+
+#prev,
+#next,
+#today{
+    user-select: none;
+    cursor: pointer;
+}
+
+.calender-wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.calender{
+    display: flex;
+    justify-content: center;
+}
